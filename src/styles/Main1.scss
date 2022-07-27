@@ -1,0 +1,70 @@
+.main1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 36px;
+  color: #fff;
+  h1,
+  h3 {
+    @include fontBebas;
+  }
+  .img-1 {
+    background-image: url("../../public/imgs/burger-section-img3.png");
+    height: 420px;
+    width: 596px;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .imgs {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    .img-2 {
+      background-image: url("../../public/imgs/burger-section-img.png");
+      height: 192px;
+      width: 596px;
+      padding-left: 20px;
+      padding-top: 20px;
+    }
+    .img-3 {
+      background-image: url("../../public/imgs/Burger-section-img2.png");
+      height: 192px;
+      width: 596px;
+      padding-left: 20px;
+      padding-top: 20px;
+    }
+  }
+}
+
+// Media Queries
+
+@media only screen and (max-width: 500px) {
+  .main1 .img-1 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 325px;
+    width: 460px;
+  }
+  .main1 .imgs .img-2,
+  .main1 .imgs .img-3 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 149px;
+    width: 460px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 365px) {
+  .main1 .img-1 {
+    height: 233px;
+    width: 330px;
+    font-size: 12px;
+  }
+  .main1 .imgs .img-2,
+  .main1 .imgs .img-3 {
+    height: 107px;
+    font-size: 10px;
+    width: 330px;
+  }
+}

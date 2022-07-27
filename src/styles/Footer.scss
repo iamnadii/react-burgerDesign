@@ -1,0 +1,116 @@
+.footer {
+  background-image: url("../../public/imgs/footer-section-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 11rem;
+  margin-bottom: 40px;
+  padding: 30px;
+  color: #fff;
+  .text {
+    display: flex;
+    gap: 30rem;
+    padding-top: 40px;
+    p {
+      @include fontMont;
+      font-size: 16.67px;
+    }
+    .right-text {
+      margin-right: 120px;
+      p {
+        @include fontBebas;
+        font-size: 20.83px;
+      }
+      .up {
+        @include flex(flex-start, center);
+        gap: 25px;
+        padding-bottom: 20px;
+      }
+      .down {
+        @include flex(flex-start, center);
+        gap: 25px;
+      }
+    }
+  }
+  .foot-end {
+    @include flex(space-between, center);
+    margin-top: 8.5rem;
+    p {
+      @include fontBebas;
+      font-size: 16.67px;
+    }
+    .icons {
+      display: flex;
+      gap: 10px;
+    }
+  }
+}
+
+// Media Queries
+
+@media only screen and (max-width: 1179px) {
+  .footer .text {
+    gap: 15rem;
+  }
+  .footer-logo {
+    width: 270px;
+  }
+  .footer .text .right-text {
+    margin-right: 80px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .footer .text .right-text {
+    margin-right: 40px;
+  }
+  .footer .text {
+    gap: 10rem;
+  }
+  .footer .text p {
+    font-size: 14.67px;
+  }
+  .footer-logo {
+    width: 240px;
+  }
+  .footer .text {
+    padding-top: 25px;
+  }
+  .up,
+  .down {
+    img {
+      width: 28px;
+    }
+  }
+}
+@media only screen and (max-width: 720px) {
+  .footer .text {
+    gap: 4rem;
+  }
+  .footer .text .right-text {
+    margin-right: 0px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .footer .text {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer .text p {
+    font-size: 14.67px;
+    text-align: center;
+  }
+  .foot-end {
+    margin-top: 4.5rem !important;
+  }
+}
+@media only screen and (max-width: 365px) {
+  .footer .foot-end p {
+    padding-bottom: 10px;
+  }
+  .foot-end {
+    flex-wrap: wrap;
+    margin-top: 3.5rem !important;
+  }
+}

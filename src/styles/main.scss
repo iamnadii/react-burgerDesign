@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@400;500;600&display=swap");
+
+$primary-color: #3d2514;
+
+@mixin fontAlfa($weight: 400) {
+  font-family: "Alfa Slab One", cursive;
+  font-weight: $weight;
+}
+@mixin fontBebas($weight: 400) {
+  font-family: "Bebas Neue", cursive;
+  font-weight: $weight;
+}
+@mixin fontMont($weight: 400) {
+  font-family: "Montserrat", sans-serif;
+  font-weight: $weight;
+}
+@mixin flex($jc: center, $ai: center) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  position: relative;
+  width: 100vw;
+  // max-width: 1440px;
+  // margin: 0 auto;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
+}
+button {
+  cursor: pointer;
+}
+@import "./Header.scss";
+@import "./Main1.scss";
+@import "./Main2.scss";
+@import "./Main3.scss";
+@import "./Main4.scss";
+@import "./FormInput.scss";
+@import "./Footer.scss";

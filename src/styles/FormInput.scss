@@ -1,0 +1,143 @@
+.form-input {
+  display: grid;
+  grid-row-gap: 20px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 90px;
+  position: relative;
+  h3 {
+    font-size: 29.17px;
+    @include fontBebas;
+    color: $primary-color;
+    margin-bottom: -20px;
+  }
+  h1 {
+    font-size: 50px;
+    @include fontAlfa;
+    color: $primary-color;
+    margin-bottom: 50px;
+  }
+  .inputs {
+    display: flex;
+    gap: 20px;
+    input {
+      font-size: 20.83px;
+      width: 379px;
+      height: 65px;
+      padding-left: 10px;
+    }
+    input::placeholder {
+      color: $primary-color;
+      font-size: 20.83px;
+      @include fontBebas;
+    }
+    button {
+      width: 379px;
+      height: 65px;
+      background-color: #bf2222;
+      color: #fff;
+      font-size: 20.83px;
+      @include fontAlfa;
+      border: none;
+      border-radius: 3px;
+    }
+  }
+  .img-1 {
+    position: absolute;
+    top: -5.4rem;
+  }
+  .img-2 {
+    position: absolute;
+    left: 31px;
+    top: 180px;
+  }
+  .img-3 {
+    position: absolute;
+    right: 0px;
+    top: 122px;
+  }
+}
+
+// Media Queries
+
+@media only screen and (max-width: 1179px) {
+  .form-input .img-3 {
+    position: absolute;
+    right: 0px;
+    top: 238px;
+    img {
+      width: 205px;
+    }
+    .img-1 {
+      width: 275px;
+      img {
+        width: 285px;
+      }
+    }
+    .img-2 {
+      position: absolute;
+      left: 30px;
+      top: 190px;
+      width: 200px;
+      img {
+        width: 205px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 980px) {
+  .form-input {
+    .img-1,
+    .img-2,
+    .img-3 {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 720px) {
+  .form-input .inputs input {
+    width: 300px;
+    height: 52px;
+  }
+  .form-input .inputs button {
+    width: 300px;
+    height: 52px;
+    font-size: 19.83px;
+  }
+  .form-input h1 {
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .form-input .inputs input {
+    width: 100%;
+  }
+  .form-input .inputs {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .form-input .inputs button {
+    width: 100%;
+    font-size: 19.83px;
+  }
+  .form-input {
+    padding: 0 20px;
+  }
+  .form-input h1 {
+    font-size: 41px;
+  }
+  .form-input h3 {
+    font-size: 37.17px;
+    margin-bottom: -20px;
+  }
+}
+@media only screen and (max-width: 365px) {
+  .form-input h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .form-input .inputs button {
+    font-size: 17.83px;
+  }
+}
